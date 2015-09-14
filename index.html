@@ -13,6 +13,14 @@
 	    <link rel="stylesheet" href="css/styles.css">
         <!--Bootstrap3-->
         <link rel="stylesheet" href="css/bootstrap.css">
+        <!--
+        <script>
+            function Show(Element) {
+                $('#tab1', '#tab2').animate({'z-index' : 100, 'opacity' : 1}, 1000);
+                //$('#tab2').animate({'z-index' : 100, 'opacity' : 1}, 1000);
+            };
+        </script>
+        -->
     </head>
     <body>
       <div class="container">
@@ -72,6 +80,10 @@
                                 <a href="#tab2">
                                     <img src="images/windows.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
                                 </a>
+                                <!--<div class="clear"></div>
+                                <a href="#tab3" onclick="return Show(this);">
+                                    <img src="images/windows.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
+                                </a>-->
                                 <br clear="all"><br><br>
                             </div>
                         </div>
@@ -271,18 +283,35 @@
         <script src="js/bootstrap.min.js"></script>
         <script>
             // Слайдер, переключение между картинками 'os-x' и 'windows'.
+
 		    $(document).ready(function(){
 			    $('.header__button a').click(function(e){
 				    e.preventDefault();
 				    $('.header__button .header__button_active').removeClass('header__button_active');
 				    $(this).addClass('header__button_active');
 				    var tab = $(this).attr('href');
-				    $('.header__choose-devices__tab').not(tab).css({'display':'none'});
-				    $(tab).fadeIn(400);
+                    $('.header__choose-devices__tab').not(tab).animate({'z-index' : 100 , 'opacity' : 1}, 1000);
+				    $(tab).animate({'z-index' : 10 , 'opacity' : .01}, 1000);
+
+                    $('#tab2__img').css({'margin-top' : '-180px', 'margin-left' : '42px'});
+		        });
+
+		    });
+
+            /*
+            $(document).ready(function(){
+			    $('.header__button a').click(function(e){
+				    e.preventDefault();
+				    $('.header__button .header__button_active').removeClass('header__button_active');
+				    $(this).addClass('header__button_active');
+				    var tab = $(this).attr('href');
+                    $('.header__choose-devices__tab').not(tab).css({'display' : 'none'});
+				    $(tab).fadeIn(1000);
 
                     $('#tab2__img').css({'margin-top' : '0', 'margin-left' : '0'});
 		        });
 		    });
+            */
 		</script>
     </body>
 </html>
