@@ -292,9 +292,14 @@
 				    var tab = $(this).attr('href');
                     $('.header__choose-devices__tab').not(tab).animate({'z-index' : 100 , 'opacity' : 1}, 1000);
 				    $(tab).animate({'z-index' : 10 , 'opacity' : .01}, 1000);
-
-                    $('#tab2__img').css({'margin-top' : '-180px', 'margin-left' : '42px'});
 		        });
+
+                var widthR = $(window).width();
+                console.log(widthR);
+                if(widthR < '1265')
+                {
+                    $('#tab2__img').css({'margin-top' : '-180px', 'margin-left' : '42px'});
+                }
 
 		    });
 
