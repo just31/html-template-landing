@@ -314,6 +314,7 @@ img {
 
 /* Адаптивный дизайн */
 @media screen and (min-width: 320px) and (max-width:479px) {
+    
     .header {
         margin-left: -20px;
         margin-right: -20px !important;
@@ -323,34 +324,40 @@ img {
     }
 
     .header__link ul {
+        margin-left: 60%;
         list-style: none;
     }
 
     .header__link li {
         float: left;
-        padding: 0 0 4% 13%;
+        padding: 0 0 4% 8%;
+    }
+
+    .header__link li > a {
+        font-size: .6em;
     }
 
     .header__logo {
-        top: 0;
+        top: -20px;
+        left: -59px;
     }
 
     .header__logo img {
         margin-left: 25%;
-        width: 20% !important;
+        width: 15% !important;
     }
 
     .header__slogan p {
-        margin-top: -13.5%;
-        margin-left: 25.5%;
-        font-size: 70%;
+        margin-top: -15%;
+        margin-left: 7%;
+        font-size: 60%;
     }
 
     .header__slogan span {
         position: relative; /* Относительное позиционирование */
         top: -15px; /* Сдвиг сверху */
-        left: 76px;
-        font-size: 220%;
+        left: 66.4px;
+        font-size: 200%;
     }
 
     .header__menu {
@@ -517,11 +524,55 @@ img {
 
 @media screen and (min-width: 320px) and (max-width:359px) {
 
+    .header {
+        height: 400px !important;
+    }
+
+    .header__link ul {
+        margin-left: 49%;
+        list-style: none;
+    }
+
+    .header__link li {
+        float: left;
+        padding: 0 0 4% 8%;
+    }
+
+    .header__link li > a {
+        font-size: .6em;
+    }
+
+    .header__logo {
+        top: -20px;
+        left: -52px;
+    }
+
+    .header__logo img {
+        margin-left: 25%;
+        width: 15% !important;
+    }
+
+    .header__slogan p {
+        margin-top: -15.8%;
+        margin-left: 4%;
+        font-size: 60%;
+    }
+
+    .header__slogan span {
+        position: relative; /* Относительное позиционирование */
+        top: -11px; /* Сдвиг сверху */
+        left: 66.4px;
+        font-size: 200%;
+    }
+
+    .header__menu {
+        margin-top: -12%;
+    }
+
     #tab2__img {
         margin-top: -165% !important;
         margin-left: 53% !important;
     }
-
 
     .header__choose-devices img {
         margin-top: -175%;
@@ -567,7 +618,16 @@ img {
 }
 
 @media screen and (min-width: 360px) and (max-width:360px) {
-        .title {
+
+    .header {
+        height: 400px !important;
+    }
+
+    .header__link li > a {
+        font-size: .6em;
+    }
+
+    .title {
         margin-top: -22%;
         margin-left: 12.5%;
     }
@@ -639,17 +699,45 @@ img {
 
 @media screen and (min-width: 375px) and (max-width:411px) {
 
+    .header {
+        height: 400px !important;
+    }
+
+    .header__link ul {
+        margin-left: 55%;
+        list-style: none;
+    }
+
+    .header__link li {
+        float: left;
+        padding: 0 0 4% 8%;
+    }
+
+    .header__link li > a {
+        font-size: .7em;
+    }
+
+    .header__logo {
+        top: -20px;
+        left: -67px;
+    }
+
+    .header__logo img {
+        margin-left: 25%;
+        width: 15% !important;
+    }
+
     .header__slogan p {
-        margin-top: -13.5%;
-        margin-left: 27.5%;
-        font-size: 70%;
+        margin-top: -15% !important;
+        margin-left: 6% !important;
+        font-size: 60%;
     }
 
     .header__slogan span {
         position: relative; /* Относительное позиционирование */
-        top: -15px; /* Сдвиг сверху */
-        left: 76px;
-        font-size: 220%;
+        top: -11px; /* Сдвиг сверху */
+        left: 66.4px;
+        font-size: 200%;
     }
 
     #tab2__img {
@@ -715,19 +803,52 @@ img {
 
 }
 
-@media screen and (min-width: 412px) and (max-width: 412px){
+@media screen and (min-width: 412px) and (max-width: 412px) {
+
+    .header {
+        height: 400px !important;
+    }
+
+    .header__link ul {
+        margin-left: 58.5%;
+        list-style: none;
+    }
+
+    .header__link li {
+        float: left;
+        padding: 0 0 4% 8%;
+    }
+
+    .header__link li > a {
+        font-size: .7em;
+    }
+
+    .header__logo {
+        top: -20px;
+        left: -67px;
+    }
+
+    .header__logo img {
+        margin-left: 23%;
+        margin-bottom: 2%;
+        width: 15% !important;
+    }
 
     .header__slogan p {
-        margin-top: -13.5%;
-        margin-left: 29%;
-        font-size: 70%;
+        margin-top: -16% !important;
+        margin-left: 8% !important;
+        font-size: 60%;
     }
 
     .header__slogan span {
         position: relative; /* Относительное позиционирование */
-        top: -15px; /* Сдвиг сверху */
-        left: 76px;
-        font-size: 220%;
+        top: -11px; /* Сдвиг сверху */
+        left: 66.4px;
+        font-size: 200%;
+    }
+
+    .header__menu {
+        margin-top: -7%;
     }
 
     #tab2__img {
@@ -795,21 +916,50 @@ img {
 
 @media screen and (min-width: 413px) and (max-width:479px) {
 
+    .header {
+        height: 400px !important;
+    }
+
+    .header__link ul {
+        margin-left: 58.5%;
+        list-style: none;
+    }
+
+    .header__link li {
+        float: left;
+        padding: 0 0 4% 8%;
+    }
+
+    .header__link li > a {
+        font-size: .7em;
+    }
+
     .header__logo {
+        top: -20px;
+        left: -67px;
+    }
+
+    .header__logo img {
+        margin-left: 23%;
         margin-bottom: 2%;
+        width: 15% !important;
     }
 
     .header__slogan p {
-        margin-top: -13.5%;
-        margin-left: 29%;
-        font-size: 70%;
+        margin-top: -16% !important;
+        margin-left: 8% !important;
+        font-size: 60%;
     }
 
     .header__slogan span {
         position: relative; /* Относительное позиционирование */
-        top: -15px; /* Сдвиг сверху */
-        left: 76px;
-        font-size: 220%;
+        top: -11px; /* Сдвиг сверху */
+        left: 66.4px;
+        font-size: 200%;
+    }
+
+    .header__menu {
+        margin-top: -7%;
     }
 
     #tab2__img {
@@ -878,6 +1028,7 @@ img {
 }
 
 @media screen and (min-width: 480px) and (max-width:639px) {
+
     .header {
         margin-left: -20px;
         margin-right: -20px !important;
@@ -1086,21 +1237,45 @@ img {
 
 @media screen and (min-width: 480px) and (max-width:600px) {
 
+    .header {
+        height: 480px !important;
+    }
+
+    .header__link ul {
+        margin-left: 59%;
+        list-style: none;
+    }
+
+    .header__link li {
+        float: left;
+        padding: 0 0 4% 11%;
+    }
+
+    .header__link li > a {
+        font-size: 1em;
+    }
+
     .header__logo {
-        margin-bottom: 2%;
+        top: 0;
+    }
+
+    .header__logo img {
+        margin-top: -3%;
+        margin-left: 6.1%;
+        width: 15% !important;
     }
 
     .header__slogan p {
-        margin-top: -13.5%;
-        margin-left: 16%;
-        font-size: 70%;
+        margin-top: -9.5%;
+        margin-left: 8%;
+        font-size: 1em;
     }
 
     .header__slogan span {
         position: relative; /* Относительное позиционирование */
         top: -15px; /* Сдвиг сверху */
-        left: 76px;
-        font-size: 220%;
+        left: 90px;
+        font-size: 1.85em;
     }
 
     #tab2__img {
@@ -1168,6 +1343,7 @@ img {
 }
 
 @media screen and (min-width: 640px) and (max-width:767px) {
+
     .header {
         margin-left: -20px;
         margin-right: -20px !important;
@@ -1377,6 +1553,7 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
+
     .header {
         margin-left: -20px;
         margin-right: -20px !important;
@@ -1599,6 +1776,7 @@ img {
 
 
 @media screen and (min-width: 1024px) and (max-width:1265px) {
+
     body {
         background-color: #fff !important;
     }
