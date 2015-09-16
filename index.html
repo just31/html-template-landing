@@ -52,8 +52,8 @@
                         <div class="col-lg-offset-1 col-lg-11 header__menu">
                             <ul>
                                 <li id="active"><a href="javascript:void(0);" class="active">Desktop</a></li>
-                                <li><a href="javascript:void(0);">Web App</a></li>
-                                <li><a href="javascript:void(0);">iOS</a></li>
+                                <li><a href="#tab1" class="header__menu_active">Web App</a></li>
+                                <li><a href="#tab2">iOS</a></li>
                                 <li><a href="javascript:void(0);">Android</a></li>
                                 <li><a href="javascript:void(0);">Windows Phone</a></li>
                                 <li><a href="javascript:void(0);">BlackBerry</a></li>
@@ -73,13 +73,9 @@
                                 <li>Magna aliqua. Ut enirm ad minim veriam, quis nostrud</li>
                             </ul>
                             <div class="header__button">
-                                <a href="#tab1" class="header__button_active">
-                                    <img src="images/os-x.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
-                                </a>
+                                <img src="images/os-x.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
                                 <div class="clear"></div>
-                                <a href="#tab2">
-                                    <img src="images/windows.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
-                                </a>
+                                <img src="images/windows.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
                                 <!--<div class="clear"></div>
                                 <a href="#tab3" onclick="return Show(this);">
                                     <img src="images/windows.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
@@ -258,7 +254,7 @@
                                     <li><a href="javascript:void(0);">Windows Phone App</a></li>
                                     <li><a href="javascript:void(0);">Windows App</a></li>
                                     <li><a href="javascript:void(0);">OSX App</a></li>
-                                    <li><a href="javascript:void(0);">BleckBarry</a></li>
+                                    <li><a href="javascript:void(0);" class="hidden-xs hidden-sm">BleckBarry</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-2 footer__touch__list">
@@ -285,10 +281,10 @@
             // Слайдер, переключение между картинками 'os-x' и 'windows'.
 
 		    $(document).ready(function(){
-			    $('.header__button a').click(function(e){
+			    $('.header__menu a').click(function(e){
 				    e.preventDefault();
-				    $('.header__button .header__button_active').removeClass('header__button_active');
-				    $(this).addClass('header__button_active');
+				    $('.header__menu .header__menu_active').removeClass('header__menu_active');
+				    $(this).addClass('header__menu_active');
 				    var tab = $(this).attr('href');
                     $('.header__choose-devices__tab').not(tab).animate({'z-index' : 100 , 'opacity' : 1}, 1000);
 				    $(tab).animate({'z-index' : 10 , 'opacity' : .01}, 1000);
