@@ -1776,7 +1776,7 @@ img {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 800px) {
+@media screen and (min-width: 768px) and (max-width: 799px) {
     .header {
         margin-left: -22px !important;
     }
