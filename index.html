@@ -13,14 +13,6 @@
 	    <link rel="stylesheet" href="css/styles.css">
         <!--Bootstrap3-->
         <link rel="stylesheet" href="css/bootstrap.css">
-        <!--
-        <script>
-            function Show(Element) {
-                $('#tab1', '#tab2').animate({'z-index' : 100, 'opacity' : 1}, 1000);
-                //$('#tab2').animate({'z-index' : 100, 'opacity' : 1}, 1000);
-            };
-        </script>
-        -->
     </head>
     <body>
       <div class="container">
@@ -30,13 +22,7 @@
                 <div class="col-lg-12 header">
 
                    <div class="row">
-                        <div class="col-lg-offset-9 col-lg-3 header__link">
-                            <ul>
-                                <li><a href="javascript:void(0);">Login</a></li>
-                                <li><a href="javascript:void(0);">FAQ</a></li>
-                                <li><a href="javascript:void(0);">Support</a></li>
-                            </ul>
-                        </div>
+                        <div id="menu1" class="col-lg-offset-9 col-lg-3 header__link"><!--Выводим верхнее топ-меню, с помощью ajax--></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-offset-1 col-lg-1 header__logo">
@@ -76,10 +62,6 @@
                                 <img src="images/os-x.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
                                 <div class="clear"></div>
                                 <img src="images/windows.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
-                                <!--<div class="clear"></div>
-                                <a href="#tab3" onclick="return Show(this);">
-                                    <img src="images/windows.png" width="300px" height="45px" alt="Тестовая верстка лендинга">
-                                </a>-->
                                 <br clear="all"><br><br>
                             </div>
                         </div>
@@ -275,44 +257,8 @@
             </footer>
 
         </div>
-        <script src="js/jquery-latest.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script>
-            // Слайдер, переключение между картинками 'os-x' и 'windows'.
-
-		    $(document).ready(function(){
-			    $('.header__menu a').click(function(e){
-				    e.preventDefault();
-				    $('.header__menu .header__menu_active').removeClass('header__menu_active');
-				    $(this).addClass('header__menu_active');
-				    var tab = $(this).attr('href');
-                    $('.header__choose-devices__tab').not(tab).animate({'z-index' : 100 , 'opacity' : 1}, 1000);
-				    $(tab).animate({'z-index' : 10 , 'opacity' : .01}, 1000);
-		        });
-
-                var widthR = $(window).width();
-                console.log(widthR);
-                if(widthR < '1265')
-                {
-                    $('#tab2__img').css({'margin-top' : '-180px', 'margin-left' : '42px'});
-                }
-
-		    });
-
-            /*
-            $(document).ready(function(){
-			    $('.header__button a').click(function(e){
-				    e.preventDefault();
-				    $('.header__button .header__button_active').removeClass('header__button_active');
-				    $(this).addClass('header__button_active');
-				    var tab = $(this).attr('href');
-                    $('.header__choose-devices__tab').not(tab).css({'display' : 'none'});
-				    $(tab).fadeIn(1000);
-
-                    $('#tab2__img').css({'margin-top' : '0', 'margin-left' : '0'});
-		        });
-		    });
-            */
-		</script>
+        <script src="js/jquery-latest.js"></script>
+        <script src="js/menu_and_slider.js"></script>
     </body>
 </html>
