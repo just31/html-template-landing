@@ -34,7 +34,6 @@ img {
     background-color: #fff !important;
 }
 
-
 /* Стили хедера */
 .header {
     max-height: 649px;
@@ -190,7 +189,6 @@ img {
 .content {
     margin-top: 100px;
     display: block;
-    width: 100%;
 }
 
 .title {
@@ -314,7 +312,7 @@ img {
 
 /* Адаптивный дизайн */
 @media screen and (min-width: 320px) and (max-width:479px) {
-    
+
     .header {
         margin-left: -20px;
         margin-right: -20px !important;
@@ -1663,6 +1661,10 @@ img {
         width: 95% !important;
     }
 
+    .content {
+        padding-left: -3% !important;
+    }
+
     #tab2__img {
         margin-top: -30% !important;
         margin-left: 5.9% !important;
@@ -1774,6 +1776,37 @@ img {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    .header {
+        margin-left: -22px !important;
+    }
+
+    .title {
+        margin-left: 22.8%;
+    }
+
+    .row > .footer {
+        margin-left: -9px !important;
+        padding-left: 45px !important;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    .header {
+        margin-left: -35px !important;
+    }
+
+    .title {
+        margin-left: 22.8%;
+    }
+
+    .row > .footer {
+        margin-left: -25px !important;
+        padding-left: 55px !important;
+    }
+
+}
 
 @media screen and (min-width: 1024px) and (max-width:1265px) {
 
